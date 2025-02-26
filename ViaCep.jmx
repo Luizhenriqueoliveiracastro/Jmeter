@@ -9,7 +9,7 @@
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
     </TestPlan>
     <hashTree>
-      <ThreadGroup guiclass="ThreadGroupgui" testclass="ThreadGroup" testname="Grupo de Usuários">
+      <ThreadGroup guiclass="ThreadGroupluiz" testclass="ThreadGroup" testname="Grupo de Usuários">
         <intProp name="ThreadGroup.num_threads">1000</intProp>
         <intProp name="ThreadGroup.ramp_time">1800</intProp>
         <longProp name="ThreadGroup.duration">3600</longProp>
@@ -22,7 +22,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSamplegui" testclass="HTTPSamplerProxy" testname="ViaCEP">
+        <HTTPSamplerProxy guiclass="HttpTestSampleluiz" testclass="HTTPSamplerProxy" testname="ViaCEP">
           <stringProp name="HTTPSampler.domain">viacep.com.br</stringProp>
           <stringProp name="HTTPSampler.port">443</stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
@@ -168,7 +168,7 @@
           </ResultCollector>
           <hashTree/>
         </hashTree>
-        <ConstantThroughputTimer guiclass="TestBeangui" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+        <ConstantThroughputTimer guiclass="TestBeanluiz" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
           <intProp name="calcMode">1</intProp>
           <doubleProp>
             <name>throughput</name>
@@ -177,7 +177,7 @@
           </doubleProp>
         </ConstantThroughputTimer>
         <hashTree/>
-        <SystemSampler guiclass="SystemSamplergui" testclass="SystemSampler" testname="OS Process Sampler">
+        <SystemSampler guiclass="SystemSamplerluiz" testclass="SystemSampler" testname="OS Process Sampler">
           <boolProp name="SystemSampler.checkReturnCode">false</boolProp>
           <stringProp name="SystemSampler.expectedReturnCode">0</stringProp>
           <stringProp name="SystemSampler.command">git add</stringProp>
